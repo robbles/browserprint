@@ -22,5 +22,4 @@ Limitations
 ===========
 - Requires Python support in Vim
 - Should work on Windows/Linux but not tested (yet!)
-- HTML content in the file will screw up the output as it isn't escaped
 

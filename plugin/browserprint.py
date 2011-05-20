@@ -1,6 +1,7 @@
 import vim
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 import webbrowser
+from cgi import escape as escape_html
 
 head_template = """
 <html>
@@ -39,5 +40,5 @@ def load_html(generator):
     server.handle_request()
 
 def load_buffer(buf):
-    load_html((line + eol for line in buf))
+    load_html((escape_html(line) + eol for line in buf))
 
