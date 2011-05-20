@@ -29,7 +29,6 @@ import vim, sys
 path = vim.eval('s:script_dir')
 sys.path.insert(0, path)
 import browserprint
-# FIXME
 reload(browserprint)
 sys.path.pop(0)
 EOF
